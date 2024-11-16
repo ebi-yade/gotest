@@ -20,6 +20,8 @@ package foo_test
 import (
 	"testing"
 
+	"foo" // your package
+
 	"github.com/ebi-yade/gotest/cases"
 )
 
