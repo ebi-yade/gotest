@@ -7,8 +7,8 @@ before:
 builds:
   - env:
       - CGO_ENABLED=0
-    main: ./cmd/template
-    binary: template
+    main: ./cmd/go-template
+    binary: go-template
     ldflags:
       - -s -w
       - -X main.Version={{.Version}}
