@@ -41,7 +41,7 @@ func TestFoo(t *testing.T) {
 			input: foo.Input{
 				Amout: 999,
 			},
-			errCheck: cases.ErrorIs(ErrTooLargeAmount),
+			errCheck: cases.ErrorIs(foo.ErrTooLargeAmount),
 		},
 	}
 
