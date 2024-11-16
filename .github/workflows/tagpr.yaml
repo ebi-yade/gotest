@@ -26,10 +26,3 @@ jobs:
         if: ${{ steps.tagpr.outputs.tag != '' }}
         with:
           ref: ${{ steps.tagpr.outputs.tag }}
-
-      - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v6
-        with:
-          version: latest
-          args: release
-        if: ${{ steps.tagpr.outputs.tag != '' }}
