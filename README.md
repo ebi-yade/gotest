@@ -12,7 +12,7 @@ go get github.com/ebi-yade/gotest/cases
 
 ### Error Check
 
-Works as a wrapper for `testify/require` in table-driven test cases.
+Works as a wrapper for [testify/require](https://pkg.go.dev/github.com/stretchr/testify/require) in table-driven test cases.
 
 ```go
 package foo_test
