@@ -13,6 +13,11 @@ func NoError(t *testing.T, err error) {
 	require.NoError(t, err)
 }
 
+func Error(t *testing.T, err error) {
+	t.Helper()
+	require.Error(t, err)
+}
+
 func ErrorIs(target error) ErrorCheck {
 	return func(t *testing.T, err error) {
 		t.Helper()
